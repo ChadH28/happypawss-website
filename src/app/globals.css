@@ -3,6 +3,18 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #000000;
+  --secondary: #F19F1F;
+  --tertiary: #EA1E23ff;
+  --primaryred: #EA1E23ff;
+  --primary-grey: #B9B9B8ff;
+  --blacktransgradient: linear-gradient(to top,
+      #000000,
+      transparent);
+}
+
+main {
+  overflow: hidden;
 }
 
 @theme inline {
@@ -23,4 +35,20 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image::after,
+.subhero::after {
+  left: 0;
+  position: absolute;
+  content: "";
+  background: var(--blacktransgradient);
+  width: 100%;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  text-wrap: balance;
+  font-family: 'Baloo Thambi', sans-serif;
 }

@@ -1,103 +1,85 @@
-import Image from "next/image";
+import Hero from "@/components/hero";
+import InfoCard from "@/components/info-card";
+import { highlights, slides } from "@/data/pageData";
+import ClientSlider from "@/components/slider";
+
+export const metadata = {
+  title: "Train & Travel in Cape Town | Total Blessing Fitness Tours",
+  description:
+    "Discover fitness, wellness retreats & adventure in Cape Town. Total Blessing blends expert workouts with unforgettable guided travel experiences.",
+  openGraph: {
+    title: "Train & Travel in Cape Town | Total Blessing Fitness Tours",
+    description:
+      "Discover fitness, wellness retreats & adventure in Cape Town. Total Blessing blends expert workouts with unforgettable guided travel experiences.",
+    url: "https://totalblessingfitnessandtraveltours.co.za/",
+    images: [
+      {
+        url: "/images/logo3.png",
+        width: 1200,
+        height: 630,
+        alt: "Total Blessing Fitness & Travel Tours",
+      },
+    ],
+  },
+};
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main>
+      <Hero
+        title={"Welcome to Happy paws pet sitting services"}
+        slider={slides}
+      />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <InfoCard
+        title={"Meet the team behind the adventure"}
+        alt
+        content={"Discover Our Passion for Fitness and Exploration"}
+        buttonlink={"/about"}
+        buttonlabel={"Get to know our journey"}
+        image={"/images/rem-bg/about-removebg-preview.png"}
+      />
+
+      <InfoCard
+        title={"Find Exciting Journeys and highlights \n Cape Town awaits you"}
+        content={`From the Stellenbosch vineyards, Hout Bays harbor to the Camps Bays iconic beach, all while taking in Table Mountains breathtaking views. Its a journey through South African culture, nature, and history in one.`}
+        buttonlink={"/adventures"}
+        buttonlabel={"Explore More"}
+        image={"/images/adventureHome.jpeg"}
+        animate
+      />
+
+      <InfoCard
+        title={"Start Your Fitness Adventure"}
+        alt
+        content={"Book Your Next Session Today"}
+        buttonlink={"/booking"}
+        buttonlabel={"Book Now"}
+        image={"/images/hiking/India_Venster_to_Upper_Cable_Station3.png"}
+      />
+
+      <ClientSlider list={highlights} />
+
+      <InfoCard
+        title={"Unleash Your Potential with Our Programs"}
+        content={`From Monday to Saturday, we have classes you can join in your desired day and time that better suits you. From boxing to cardio and any fitness needs you want exclusively, let your personal coach guide you through it.`}
+        buttonlink={"/fitness"}
+        buttonlabel={"Get Fit"}
+        image={"/images/Fitness/Fitness05.jpeg"}
+        animate
+      />
+
+      <InfoCard
+        title={"Join our online boxercise classes!"}
+        content={`Join our Cape Town-based online boxercise classes for a high-energy workout combining boxing techniques and fitness training. Each session includes a warm-up, boxing drills, bodyweight exercises, and a cool-down for recovery. Suitable for all fitness levels, our virtual classes on Zoom require no special equipment—train from home and get fit with us!`}
+        video={"/video/WhatsApp Video 2025-03-11 at 17.23.45.mp4"}
+        buttonlink={
+          "https://wa.me/27787589451?text=Online%20boxercise%20class%20enquiry"
+        }
+        buttonlabel={"Enquire here via whatsapp"}
+        external
+        alt
+      />
+    </main>
   );
 }
