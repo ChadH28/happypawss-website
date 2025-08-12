@@ -1,8 +1,8 @@
 import Hero from "@/components/hero";
 import InfoCard from "@/components/info-card";
-import { highlights, slides, activities } from "@/data/pageData";
-import ClientSlider from "@/components/slider";
+import { points, slides, activities } from "@/data/pageData";
 import AdventureSlider from "@/components/adventure-slider";
+import Choices from "@/components/choices";
 
 export const metadata = {
   title: "Train & Travel in Cape Town | Total Blessing Fitness Tours",
@@ -41,6 +41,18 @@ export default function Home() {
         buttonlink={"/about"}
         buttonlabel={"Get to know my journey"}
         image={"/images/IMG-20250425-WA0009.jpg"}
+      />
+
+      <Choices
+        heading={"Why Choose Me"}
+        title={"For your best friend"}
+        content={
+          "Whether it’s a wagging tail, a playful nudge, or a quiet moment curled up together, there’s nothing quite like the bond you share with your best friend. Every day is an opportunity for new adventures, gentle care, and happy memories. From morning walks to bedtime cuddles, we’re here to make every moment just as special as they are, because they deserve nothing less than your love, comfort, and time."
+        }
+        points={points}
+        image={
+          "/images/pexels-gilberto-reyes-259461-825947-removebg-preview.png"
+        }
       />
 
       <InfoCard
