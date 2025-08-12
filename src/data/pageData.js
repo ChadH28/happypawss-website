@@ -140,73 +140,16 @@ export const points = [
   {
     title: "Social Responsibility",
     description:
-      "Caring for pets, caring for the planet, caring for our community. At Happy Paws, we believe compassion extends beyond the pets we care for—it reaches the environment and people too.",
+      "Caring for pets, caring for the planet, caring for our community. At Happy Paws, we believe compassion extends beyond the pets we care for, it reaches the environment and people too.",
   },
   {
     title: "Mission Statement",
     description:
       "To provide loving, reliable, and professional pet care that gives owners peace of mind and pets the happiness they deserve. We treat every animal as if they were our own, ensuring they feel safe, loved, and cared for while their owners are away. Our goal is to build trust with both pets and people through compassion, consistency, and communication.",
   },
-
   {
     title: "value added services",
     description:
-      "Our value-added services make pet care extra special—daily photo and video updates keep you connected, emergency vet assistance ensures peace of mind, and custom care plans match your pet’s unique needs. We can reinforce basic training, celebrate your pet’s special days with treats, and even care for small animals like rabbits, birds, and hamsters.",
-  },
-];
-
-export const socialResponsibility = {
-  title: "Social Responsibility 🐾🌍",
-  description:
-    "Caring for pets, caring for the planet, caring for our community. At Happy Paws, we believe compassion extends beyond the pets we care for—it reaches the environment and people too.",
-  points: [
-    "We use eco-friendly cleaning products and biodegradable waste bags.",
-    "We support local animal shelters through donations and volunteer time.",
-    "We promote responsible pet ownership through education and resources.",
-    "A percentage of our proceeds goes to spay/neuter programs to help reduce stray populations.",
-  ],
-};
-
-export const missionStatement = {
-  title: "Mission Statement 🎯",
-  description:
-    "To provide loving, reliable, and professional pet care that gives owners peace of mind and pets the happiness they deserve. We treat every animal as if they were our own, ensuring they feel safe, loved, and cared for while their owners are away. Our goal is to build trust with both pets and people through compassion, consistency, and communication.",
-};
-
-export const valueAddedServices = [
-  {
-    title: "Pet Updates & Photos 📸",
-    description:
-      "Receive daily pictures or videos of your pet so you never miss a moment.",
-    image: "/images/pet-updates.jpg",
-  },
-  {
-    title: "Emergency Vet Assistance 🚑",
-    description:
-      "In case of illness or injury, we coordinate care immediately for your peace of mind.",
-    image: "/images/vet-assistance.jpg",
-  },
-  {
-    title: "Custom Play & Care Plans 📝",
-    description:
-      "Tailored activities and schedules designed to match your pet’s personality and needs.",
-    image: "/images/custom-care.jpg",
-  },
-  {
-    title: "Basic Training Reinforcement 🎓",
-    description: "Help maintain house manners and obedience while you’re away.",
-    image: "/images/training.jpg",
-  },
-  {
-    title: "Pet Birthday & Holiday Treats 🎉",
-    description:
-      "Surprise your furry friend with special goodies on their big day.",
-    image: "/images/pet-birthday.jpg",
-  },
-  {
-    title: "Small Pet Care 🐇🐦",
-    description:
-      "Care for rabbits, birds, hamsters, and more—not just cats and dogs.",
-    image: "/images/small-pets.jpg",
+      "Our value-added services make pet care extra special—daily photo and video updates keep you connected, emergency vet assistance ensures peace of mind, and custom care plans match your pet’s unique needs. We can reinforce basic training, celebrate your pet’s special days with treats.",
   },
 ];

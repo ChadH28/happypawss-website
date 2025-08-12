@@ -15,7 +15,7 @@ export default function Choices({
 }) {
   return (
     <div>
-      <div className="lined_header text-center relative">
+      <div className="lined_header text-[#108896] text-center relative">
         <h2>{heading}</h2>
       </div>
       <div
@@ -42,7 +42,7 @@ export default function Choices({
           }}
           className={`${
             background ? `bg-[${background}]` : `bg-white`
-          }  content-container max-[1024px]:w-screen w-1/2 max-[1024px]:p-5 p-16 flex flex-col gap-5 justify-center`}
+          }  content-container max-[1024px]:w-screen w-1/2 max-[1024px]:p-5 p-16 my-auto flex flex-col gap-5 justify-center`}
         >
           <h2
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
@@ -61,10 +61,10 @@ export default function Choices({
           >
             {content}
           </p>
-          <div className="h-96">
+          <div className="h-72">
             {points &&
               points.map((activity, index) => (
-                <span key={index} className="points my-1">
+                <span key={index} className="points my-2">
                   <h4 className="text-white rounded-4xl py-2.5 px-4 w-full text-lg my-1 capitalize cursor-pointer hover:bg-amber-600 bg-[#108896]">
                     {activity.title}
                   </h4>
