@@ -14,7 +14,12 @@ export default function Choices({
   points,
 }) {
   return (
-    <div>
+    <div
+      style={{
+        background: background,
+      }}
+      className="py-10"
+    >
       <div className="lined_header text-[#108896] text-center relative">
         <h2>{heading}</h2>
       </div>
@@ -37,7 +42,7 @@ export default function Choices({
 
         <div
           style={{
-            background: background,
+            // background: background,
             color: textc,
           }}
           className={`${

@@ -7,7 +7,7 @@ function SampleNextArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className="absolute z-10 w-2 h-16 right-0 top-1/2 translate-y-1/2 cursor-pointer bg-red-700"
+      className="absolute z-10 w-2 h-16 right-0 top-1/2 translate-y-1/2 cursor-pointer bg-[#108896]"
       style={{ ...style, display: "block" }}
       onClick={onClick}
     />
@@ -18,7 +18,7 @@ function SamplePrevArrow(props) {
   const { style, onClick } = props;
   return (
     <div
-      className="absolute z-10 w-2 h-16 top-1/2 translate-y-1/2 cursor-pointer bg-red-700"
+      className="absolute z-10 w-2 h-16 top-1/2 translate-y-1/2 cursor-pointer bg-[#108896]"
       style={{ ...style, display: "block" }}
       onClick={onClick}
     />
@@ -49,7 +49,7 @@ export default function AdventureSlider({ list, heading }) {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="adventure-section relative py-16 w-full flex flex-col gap-8 bg-slate-50">
+    <div className="adventure-section relative py-16 w-full flex flex-col gap-8">
       <div className="lined_header  text-center relative">
         <h2>{heading}</h2>
       </div>
@@ -80,7 +80,7 @@ export default function AdventureSlider({ list, heading }) {
           </a>
         ))}
       </Slider>
-      <span className="bg-[#df2828] px-5 py-2 mx-auto w-fit text-center text-white uppercase rounded-md text-sm">
+      <span className="bg-[#F19F1F] font-extrabold rounded-4xl px-5 py-2 mx-auto w-fit text-center text-white uppercase text-sm">
         click on activity and Book via whatsapp
       </span>
     </div>

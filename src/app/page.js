@@ -44,6 +44,7 @@ export default function Home() {
       />
 
       <Choices
+      background={'#F5F3EE'}
         heading={"Why Choose Me"}
         title={"For your best friend"}
         content={
