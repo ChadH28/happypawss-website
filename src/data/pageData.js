@@ -24,59 +24,64 @@ export const galleryImages = [
 
 export const activities = [
   {
-    title: "Hout Bay",
+    title: "Energizing 1-Hour Dog Walks 🐕‍🦺",
     description:
-      "This harbour-front emporium offers Hout Bay visitors lovely ocean views, great restaurants and takeaway spots, markets and shops.",
+      "Give your pup the exercise, fresh air, and tail-wagging fun they crave.",
     image: "/images/seal.jpg",
   },
   {
-    title: "Atlantis Sandboarding",
+    title: "Nutritious Meals & Fresh Water 🍲💧",
     description:
-      "Escape to the thrill of Atlantis, Just a 30-minute drive from Cape Town,dive into adventure with sandboarding on colossal dunes reaching up to 35m (114ft). Experience the exciting rush, breath taking views, and the exhilaration of one of the world's premier sandboarding destinations in Cape Town, Atlantis.",
-    image: "/images/sandboarding.jpg",
+      "Serve every furry friend a healthy meal and a bowl of cool, clean water.",
+    image: "/images/pexels-mart-production-8434676.jpg",
   },
   {
-    title: "Shark Cage Diving",
+    title: "Responsible Waste Cleanup 💩",
     description:
-      "Shark cage diving in Cape Town is an exciting and unique activity that allows you to get close to some of the ocean's most incredible creatures. Located off the coast of Gansbaai, one of the world's great white shark hotspots, you can jump into a steel cage that floats just beneath the waves where you can observe these majestic predators up close.",
-    image: "/images/shark.png",
+      "Keep yards and walks spotless while ensuring a hygienic, happy environment.",
+    image: "/images/pexels-angel-cristi-34806331-7153972.jpg",
   },
   {
-    title: "Quad Biking",
+    title: "Playtime & Cuddles 🐾",
     description:
-      "Quad biking in Cape Town is an exhilarating way to explore the natural beauty of this stunning and iconic city. You can traverse through rugged terrains, enjoying breathtaking views of Table Mountain and the Winelands.",
-    image: "/images/quats.png",
+      "Engage pets with toys, games, and snuggles to boost their mood and trust.",
+    image: "/images/IMG-20250425-WA0010.jpg",
   },
   {
-    title: "Kirstenbosch Gardens",
+    title: "Beach Adventures 🌊",
     description:
-      "Kirstenbosch Botanical Garden in Cape Town is an enchanting experience for all travelers. A stunning landscape of 528 hectares of indigenous forests, gardens, and wetlands make this a must-see destination.",
-    image: "/images/protea.png",
+      "Treat your dog to a stroll on the sand with the soothing sound of the waves.",
+    image: "/images/IMG-20250425-WA0021.jpg",
   },
   {
-    title: "Township Tours",
+    title: "Scenic Car Rides 🚗",
     description:
-      "A Township Tour in Cape Town is a must-see experience. You will get to visit vibrant and colorful neighborhoods and see the unique culture of these communities. With such a variety of destinations and experiences, this Township Tour of Cape Town is definitely one you won’t want to miss!",
-    image: "/images/township.png",
+      "Let your pup feel the breeze and enjoy a safe, exciting trip around town.",
+    image: "/images/pexels-freestocks-134392.jpg",
   },
   {
-    title: "Bungee Jumping",
+    title: "Pet Taxi Service 🚕",
     description:
-      "Get an adrenaline rush from the Africa's Highest Bungee jump. Enjoy spectacular views from Bloukrans Bridge, which connects some of South Africa’s most beautiful national parks.",
-    image: "/images/Bungee Jumping.png",
+      "Safe, stress-free transport to the vet, groomer, or playdates.",
+    image: "/images/pexels-alice1-30463494.jpg",
   },
   {
-    title: "Wine Tasting",
+    title: "Grooming & Pampering 🛁",
     description:
-      "Raise a glass to an incredible day of wine, food, scenery, and history during this small-group, excursion to the Cape Winelands. Explore the unique wineries and stunning landscape of this region.",
-    image: "/images/WineTasting.png",
+      "Brush, bathe, and style your pet so they look and feel amazing.",
+    image: "/images/pexels-goochie-poochie-19145880.jpg",
   },
   {
-    title: "Hiking",
+    title: "Overnight Pet Sitting 🏠",
     description:
-      "There are many amazing hiking trails in Cape Town of different lengths and difficulty levels. From easy routes suitable for children to challenging hikes that require some rock climbing skills.",
-    image: "/images/Hiking.png",
+      "Stay with pets overnight for company, comfort, and safety while you’re away.",
+    image: "/images/IMG-20250425-WA0013.jpg",
   },
+  // {
+  //   title: "Pet Photography 📸",
+  //   description: "Capture adorable, high-quality memories of your furry friends.",
+  //   image: "/images/pet-photography.png",
+  // },
 ];
 
 export const slides = [

@@ -1,7 +1,8 @@
 import Hero from "@/components/hero";
 import InfoCard from "@/components/info-card";
-import { highlights, slides } from "@/data/pageData";
+import { highlights, slides, activities } from "@/data/pageData";
 import ClientSlider from "@/components/slider";
+import AdventureSlider from "@/components/adventure-slider";
 
 export const metadata = {
   title: "Train & Travel in Cape Town | Total Blessing Fitness Tours",
@@ -31,13 +32,15 @@ export default function Home() {
         slider={slides}
       />
 
+      <AdventureSlider list={activities} />
+
       <InfoCard
-        title={"Meet the team behind the adventure"}
+        title={"Discover My Passion for Petsitting"}
         alt
-        content={"Discover Our Passion for Fitness and Exploration"}
+        // content={"Discover My Passion for Petsitting"}
         buttonlink={"/about"}
-        buttonlabel={"Get to know our journey"}
-        image={"/images/rem-bg/about-removebg-preview.png"}
+        buttonlabel={"Get to know my journey"}
+        image={"/images/IMG-20250425-WA0009.jpg"}
       />
 
       <InfoCard

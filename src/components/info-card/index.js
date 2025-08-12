@@ -18,14 +18,15 @@ export default function InfoCard({
     <div
       className={`flex ${
         alt ? "flex-row-reverse" : "flex-row"
-      } max-[1024px]:flex-col h-fit`}
+      } max-[1024px]:flex-col h-fit mx-8 my-16`}
     >
       {video ? (
         <div className={`w-1/2 max-[1024px]:w-screen ${!cover && "bg-black"} `}>
           <video
             className={`object-${
               cover ? "cover" : "contain"
-            } h-[21.875rem] h-inherit max-[1024px]:h-96 w-screen`}
+            } h-[21.875rem] rounded-4xl
+ h-inherit max-[1024px]:h-96 w-screen`}
             autoPlay
             loop
             muted
@@ -36,7 +37,8 @@ export default function InfoCard({
         </div>
       ) : (
         <div
-          className={`relative image-container overflow-hidden min-h-[21.875rem] h-full w-1/2 max-[1024px]:w-screen`}
+          className={`relative rounded-4xl
+ image-container overflow-hidden min-h-[21.875rem] h-full w-1/2 max-[1024px]:w-screen`}
         >
           <img
             className={`
