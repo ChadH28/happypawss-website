@@ -95,7 +95,7 @@ export const whyChooseUs = [
   {
     title: "Daily Walks",
     description:
-      "We give your dog more than just exercise—every walk is an adventure filled with sights, smells, and happy tail wags.",
+      "I give your dog more than just exercise, every walk is an adventure filled with sights, smells, and happy tail wags.",
     image: "/images/walks.jpg",
   },
   {
@@ -107,13 +107,13 @@ export const whyChooseUs = [
   {
     title: "Clean & Tidy",
     description:
-      "We leave no mess behind—just happy pets and a fresh, welcoming space for them (and you) to enjoy.",
+      "I leave no mess behind, just happy pets and a fresh, welcoming space for them (and you) to enjoy.",
     image: "/images/clean.jpg",
   },
   {
     title: "Playtime & Bonding",
     description:
-      "From games of fetch to cozy cuddle sessions, we make sure your pets feel loved, stimulated, and part of the family.",
+      "From games of fetch to cozy cuddle sessions, I make sure your pets feel loved, stimulated, and part of the family.",
     image: "/images/playtime.jpg",
   },
   {
@@ -140,16 +140,16 @@ export const points = [
   {
     title: "Social Responsibility",
     description:
-      "Caring for pets, caring for the planet, caring for our community. At Happy Paws, we believe compassion extends beyond the pets we care for, it reaches the environment and people too.",
+      "Caring for pets, caring for the planet, caring for our community. At Happy Paws, I believe compassion extends beyond the pets I care for, it reaches the environment and people too.",
   },
   {
     title: "Mission Statement",
     description:
-      "To provide loving, reliable, and professional pet care that gives owners peace of mind and pets the happiness they deserve. We treat every animal as if they were our own, ensuring they feel safe, loved, and cared for while their owners are away. Our goal is to build trust with both pets and people through compassion, consistency, and communication.",
+      "To provide loving, reliable, and professional pet care that gives owners peace of mind and pets the happiness they deserve. I treat every animal as if they were my own, ensuring they feel safe, loved, and cared for while their owners are away. My goal is to build trust with both pets and people through compassion, consistency, and communication.",
   },
   {
     title: "value added services",
     description:
-      "Our value-added services make pet care extra special—daily photo and video updates keep you connected, emergency vet assistance ensures peace of mind, and custom care plans match your pet’s unique needs. We can reinforce basic training, celebrate your pet’s special days with treats.",
+      "My value-added services make pet care extra special—daily photo and video updates keep you connected, emergency vet assistance ensures peace of mind, and custom care plans match your pet’s unique needs. I can reinforce basic training, celebrate your pet’s special days with treats.",
   },
 ];

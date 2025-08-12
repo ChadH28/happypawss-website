@@ -37,7 +37,6 @@ export default function Home() {
       <InfoCard
         title={"Discover My Passion for Petsitting"}
         alt
-        // content={"Discover My Passion for Petsitting"}
         buttonlink={"/about"}
         buttonlabel={"Get to know my journey"}
         image={"/images/IMG-20250425-WA0009.jpg"}
@@ -48,7 +47,7 @@ export default function Home() {
         heading={"Why Choose Me"}
         title={"For your best friend"}
         content={
-          "Whether it’s a wagging tail, a playful nudge, or a quiet moment curled up together, there’s nothing quite like the bond you share with your best friend. Every day is an opportunity for new adventures, gentle care, and happy memories. From morning walks to bedtime cuddles, we’re here to make every moment just as special as they are, because they deserve nothing less than your love, comfort, and time."
+          "Whether it’s a wagging tail, a playful nudge, or a quiet moment curled up together, there’s nothing quite like the bond you share with your best friend. Every day is an opportunity for new adventures, gentle care, and happy memories. From morning walks to bedtime cuddles, I'm here to make every moment just as special as they are, because they deserve nothing less than our love, comfort, and time."
         }
         points={points}
         image={
@@ -58,7 +57,7 @@ export default function Home() {
 
       <InfoCard
         title={"Paw-some Moments Caught on Camera 📸🐾"}
-        content={`From playful zoomies to peaceful naps, our gallery captures the heartwarming adventures of the pets we care for. Each photo tells a story of wagging tails, happy purrs, and unforgettable memories. Take a peek, you might just spot your furry friend’s best moment!"`}
+        content={`From playful zoomies to peaceful naps, the gallery captures the heartwarming adventures of the pets I care for. Each photo tells a story of wagging tails, happy purrs, and unforgettable memories. Take a peek, you might just spot your furry friend’s best moment!"`}
         buttonlink={"/gallery"}
         buttonlabel={"view gallery"}
         image={"/images/IMG-20250425-WA0024.jpg"}
