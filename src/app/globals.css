@@ -50,5 +50,30 @@ body {
 h1,
 h2 {
   text-wrap: balance;
-  font-family: 'Baloo Thambi', sans-serif;
+  font-family: "Baloo Thambi 2", system-ui;
+}
+
+
+.lined_header>h2 {
+  font-size: 4em;
+  font-weight: 800;
+  font-family: "Baloo Thambi 2", system-ui;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #282828;
+  letter-spacing: -.025em;
+  text-transform: uppercase;
+}
+
+.lined_header>h2:after,
+.lined_header>h2:before {
+  background-color: #000000;
+  position: relative;
+  content: '';
+  width: 97px;
+  opacity: 0.2;
+  height: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
 }

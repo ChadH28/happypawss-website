@@ -25,7 +25,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default function AdventureSlider({ list }) {
+export default function AdventureSlider({ list, heading }) {
   var settings = {
     lazyLoad: true,
     responsive: [
@@ -50,6 +50,9 @@ export default function AdventureSlider({ list }) {
   };
   return (
     <div className="adventure-section relative py-16 w-full flex flex-col gap-8 bg-slate-50">
+      <div className="lined_header text-center relative">
+        <h2>{heading}</h2>
+      </div>
       <Slider {...settings} className="relative">
         {list.map((activity, index) => (
           <a

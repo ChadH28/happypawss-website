@@ -32,7 +32,7 @@ export default function Home() {
         slider={slides}
       />
 
-      <AdventureSlider list={activities} />
+      <AdventureSlider heading="My services" list={activities} />
 
       <InfoCard
         title={"Discover My Passion for Petsitting"}
@@ -44,35 +44,15 @@ export default function Home() {
       />
 
       <InfoCard
-        title={"Find Exciting Journeys and highlights \n Cape Town awaits you"}
-        content={`From the Stellenbosch vineyards, Hout Bays harbor to the Camps Bays iconic beach, all while taking in Table Mountains breathtaking views. Its a journey through South African culture, nature, and history in one.`}
-        buttonlink={"/adventures"}
-        buttonlabel={"Explore More"}
-        image={"/images/adventureHome.jpeg"}
+        title={"Paw-some Moments Caught on Camera 📸🐾"}
+        content={`From playful zoomies to peaceful naps, our gallery captures the heartwarming adventures of the pets we care for. Each photo tells a story of wagging tails, happy purrs, and unforgettable memories. Take a peek, you might just spot your furry friend’s best moment!"`}
+        buttonlink={"/gallery"}
+        buttonlabel={"view gallery"}
+        image={"/images/IMG-20250425-WA0024.jpg"}
         animate
       />
 
-      <InfoCard
-        title={"Start Your Fitness Adventure"}
-        alt
-        content={"Book Your Next Session Today"}
-        buttonlink={"/booking"}
-        buttonlabel={"Book Now"}
-        image={"/images/hiking/India_Venster_to_Upper_Cable_Station3.png"}
-      />
-
-      <ClientSlider list={highlights} />
-
-      <InfoCard
-        title={"Unleash Your Potential with Our Programs"}
-        content={`From Monday to Saturday, we have classes you can join in your desired day and time that better suits you. From boxing to cardio and any fitness needs you want exclusively, let your personal coach guide you through it.`}
-        buttonlink={"/fitness"}
-        buttonlabel={"Get Fit"}
-        image={"/images/Fitness/Fitness05.jpeg"}
-        animate
-      />
-
-      <InfoCard
+      {/* <InfoCard
         title={"Join our online boxercise classes!"}
         content={`Join our Cape Town-based online boxercise classes for a high-energy workout combining boxing techniques and fitness training. Each session includes a warm-up, boxing drills, bodyweight exercises, and a cool-down for recovery. Suitable for all fitness levels, our virtual classes on Zoom require no special equipment—train from home and get fit with us!`}
         video={"/video/WhatsApp Video 2025-03-11 at 17.23.45.mp4"}
@@ -82,7 +62,7 @@ export default function Home() {
         buttonlabel={"Enquire here via whatsapp"}
         external
         alt
-      />
+      /> */}
     </main>
   );
 }

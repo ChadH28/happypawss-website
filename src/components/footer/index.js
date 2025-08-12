@@ -6,23 +6,26 @@ export default function Footer() {
           <div>
             <strong className="text-red-600">Our Address</strong>
             <br />
-            <a
-              target="_blank"
-              href="https://www.google.com/maps/dir/-33.91039,18.50459/277+Main+Rd,+Sea+Point,+Cape+Town,+8060/@-33.9151888,18.3681501,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1dcc673aef9ff6e5:0xfdae4c917b53c398!2m2!1d18.3940621!2d-33.9111697?entry=ttu&g_ep=EgoyMDI1MDMxMC4wIKXMDSoASAFQAw%3D%3D"
-              className="whitespace-pre-line"
-            >{`277 Main Rd, Seapoint,\n Cape Town,\n 8060`}</a>
+            <span className="whitespace-pre-line">{`Anywhere in Cape Town`}</span>
           </div>
           <div>
-            <strong className="text-red-600">Contact Us</strong>
+            <strong className="text-red-600">Contact</strong>
             <br />
             <a
-              href="tel:+27787589451"
+              href="tel:+27637407158"
               className="whitespace-pre-line"
-            >{`(+27) 78-758-9451`}</a>
+            >{`(+27) 63-740-7158`}</a>
           </div>
           <div>
-            <strong className="text-red-600">Schedules</strong>
-            <p className="whitespace-pre-line">{`Mon - Fri :- 7:30am - 7:30pm\nSat :- 7:00am - 2:00pm`}</p>
+            <strong className="text-red-600">Email</strong>
+            <p className="whitespace-pre-line">
+              {" "}
+              <a
+                target="_blank"
+                href="mailto:happypaws@gmail.com"
+                className="whitespace-pre-line"
+              >{`happypaws@gmail.com`}</a>
+            </p>
           </div>
         </div>
         <hr className="w-full" />

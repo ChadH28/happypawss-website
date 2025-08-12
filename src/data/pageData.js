@@ -27,7 +27,7 @@ export const activities = [
     title: "Energizing 1-Hour Dog Walks 🐕‍🦺",
     description:
       "Give your pup the exercise, fresh air, and tail-wagging fun they crave.",
-    image: "/images/seal.jpg",
+    image: "/images/pexels-thebigplanet-33405999.jpg",
   },
   {
     title: "Nutritious Meals & Fresh Water 🍲💧",
@@ -60,6 +60,12 @@ export const activities = [
     image: "/images/pexels-freestocks-134392.jpg",
   },
   {
+    title: "Overnight Pet Sitting 🏠",
+    description:
+      "Stay with pets overnight for company, comfort, and safety while you’re away.",
+    image: "/images/IMG-20250425-WA0013.jpg",
+  },
+  {
     title: "Pet Taxi Service 🚕",
     description:
       "Safe, stress-free transport to the vet, groomer, or playdates.",
@@ -70,12 +76,6 @@ export const activities = [
     description:
       "Brush, bathe, and style your pet so they look and feel amazing.",
     image: "/images/pexels-goochie-poochie-19145880.jpg",
-  },
-  {
-    title: "Overnight Pet Sitting 🏠",
-    description:
-      "Stay with pets overnight for company, comfort, and safety while you’re away.",
-    image: "/images/IMG-20250425-WA0013.jpg",
   },
   // {
   //   title: "Pet Photography 📸",
