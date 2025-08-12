@@ -70,7 +70,7 @@ export default function Choices({
             {points &&
               points.map((activity, index) => (
                 <span key={index} className="points my-2">
-                  <h4 className="text-white rounded-4xl py-2.5 px-4 w-full text-lg my-1 capitalize cursor-pointer hover:bg-amber-600 bg-[#108896]">
+                  <h4 className="text-white rounded-4xl py-2.5 px-4 w-full text-lg my-1 capitalize cursor-pointer hover:bg-[#F19F1F] bg-[#108896]">
                     {activity.title}
                   </h4>
                   <p className="text-[gray] p-2 w-[inherit]">
