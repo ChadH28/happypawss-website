@@ -85,9 +85,9 @@ export default function ContactCard() {
             data-action="submit"
             type="submit"
             id="button-send"
-            className="btn g-recaptcha send bg-[#F19F1F] py-3 px-4 rounded-xl cursor-pointer"
+            className="btn g-recaptcha text-white send bg-[#F19F1F] py-3 px-4 rounded-xl cursor-pointer"
           >
-            Send <i className="fas fa-paper-plane" />
+            Send <i className="fas text-white fa-paper-plane" />
           </button>
         </form>
       </div>

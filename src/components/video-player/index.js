@@ -24,15 +24,9 @@ export default function VideoPlayer({ title, text, video }) {
           {title}
         </h2>
         <p className="max-[1024px]:text-xs text-xl">{text}</p>
-        {/* <a
-          className="uppercase hover:bg-red-500 bg-primaryred font-extrabold w-fit text-xs px-4 py-2"
-          href={"/register"}
-        >
-          register here
-        </a> */}
       </span>
       <video
-        className="h-[31.25rem] w-[inherit] object-cover"
+        className="h-[35rem] w-[inherit] object-cover"
         ref={myVideo}
         autoPlay
         loop

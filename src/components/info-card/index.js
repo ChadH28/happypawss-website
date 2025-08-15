@@ -81,7 +81,7 @@ export default function InfoCard({
           <div data-aos={animate && (alt ? "fade-right" : "fade-left")}>
             {external ? (
               <a
-                className="uppercase rounded-4xl bg-[#F19F1F] text-xs text-white font-extrabold w-fitpx-4 py-2"
+                className="uppercase rounded-4xl bg-[#F19F1F] text-xs text-white font-extrabold w-fit px-4 py-2"
                 href={buttonlink}
                 target={external ? "_blank" : "_self"}
               >
@@ -89,7 +89,7 @@ export default function InfoCard({
               </a>
             ) : (
               <a
-                className="uppercase bg-[#F19F1F] rounded-4xl text-xs text-white font-extrabold w-fitpx-4 py-2 px-4"
+                className="uppercase bg-[#F19F1F] rounded-4xl text-xs text-white font-extrabold w-fit px-4 py-2"
                 href={buttonlink}
               >
                 {buttonlabel ?? "find out"}

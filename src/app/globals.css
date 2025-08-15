@@ -84,6 +84,10 @@ h2 {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
+.form-container form {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
 .lined_header>h2 {
   font-size: 4em;
   font-weight: 800;
@@ -138,4 +142,17 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.zoomImg {
+  overflow: hidden;
+  transition: 0.75s ease-in-out;
+}
+
+.zoomImg>img {
+  transition: 0.75s ease-in-out;
+}
+
+.zoomImg:hover>img {
+  transform: scale(1.2);
 }

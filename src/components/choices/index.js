@@ -20,9 +20,11 @@ export default function Choices({
       }}
       className="py-10"
     >
-      <div className="lined_header text-[#108896] text-center relative">
-        <h2>{heading}</h2>
-      </div>
+      {heading && (
+        <div className="lined_header text-[#108896] text-center relative">
+          <h2>{heading}</h2>
+        </div>
+      )}
       <div
         className={`flex flex-row-reverse max-[1024px]:flex-col h-auto mx-8 my-16`}
       >
