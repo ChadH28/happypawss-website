@@ -49,7 +49,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-
+      
       <InfoCard
         alt
         title={"Love What You See? Let’s Care for Your Pet Too!"}

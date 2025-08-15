@@ -6,7 +6,7 @@ export default function ContactCard() {
           <h2>{"Contact Us"}</h2>
         </div>
         <form
-          //   data-aos="zoom-in-right"
+          data-aos="zoom-in-right"
           className="needs-validation bg-white flex flex-col gap-4 min-w-xl p-8 rounded-4xl"
           id="form"
           noValidate

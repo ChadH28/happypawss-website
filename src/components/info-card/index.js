@@ -68,20 +68,22 @@ export default function InfoCard({
         >
           {title}
         </h2>
-        <p
-          data-aos={animate && (alt ? "fade-right" : "fade-left")}
-          className={`max-[1024px]:text-xl ${
-            textc ? `text-[${textc}]` : `text-[grey]`
-          } text-pretty text-base`}
-          style={{ whiteSpace: "preserve-breaks" }}
-        >
-          {content}
-        </p>
+        {content && (
+          <p
+            data-aos={animate && (alt ? "fade-right" : "fade-left")}
+            className={`max-[1024px]:text-xl ${
+              textc ? `text-[${textc}]` : `text-[#532929]`
+            } text-pretty text-base`}
+            style={{ whiteSpace: "preserve-breaks" }}
+          >
+            {content}
+          </p>
+        )}
         {buttonlink && (
           <div data-aos={animate && (alt ? "fade-right" : "fade-left")}>
             {external ? (
               <a
-                className="uppercase rounded-4xl bg-[#F19F1F] text-xs text-white font-extrabold w-fit px-4 py-2"
+                className="uppercase hoverstate rounded-4xl bg-[#F19F1F] text-xs text-white font-extrabold w-fit px-4 py-2"
                 href={buttonlink}
                 target={external ? "_blank" : "_self"}
               >
@@ -89,7 +91,7 @@ export default function InfoCard({
               </a>
             ) : (
               <a
-                className="uppercase bg-[#F19F1F] rounded-4xl text-xs text-white font-extrabold w-fit px-4 py-2"
+                className="uppercase hoverstate bg-[#F19F1F] rounded-4xl text-xs text-white font-extrabold w-fit px-4 py-2"
                 href={buttonlink}
               >
                 {buttonlabel ?? "find out"}

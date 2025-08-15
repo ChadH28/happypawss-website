@@ -15,7 +15,7 @@ export const metadata = {
       "Trusted Pet Sitting Services in Cape Town | Loving Care for Your Pets",
     description:
       "Professional pet sitting in Cape Town with personalized care for dogs, cats, and other pets. We ensure your furry friends are safe, happy, and well-loved while you’re away.",
-    url: "https://totalblessingfitnessandtraveltours.co.za/",
+    // url: "https://totalblessingfitnessandtraveltours.co.za/",
     images: [
       {
         url: "/images/logo3.png",
@@ -59,7 +59,7 @@ export default function Home() {
       />
 
       <InfoCard
-        title={"Paw-some Moments Caught on Camera 📸🐾"}
+        title={"Paw-some Moments Caught on Camera"}
         content={`From playful zoomies to peaceful naps, the gallery captures the heartwarming adventures of the pets I care for. Each photo tells a story of wagging tails, happy purrs, and unforgettable memories. Take a peek, you might just spot your furry friend’s best moment!"`}
         buttonlink={"/gallery"}
         buttonlabel={"view gallery"}
