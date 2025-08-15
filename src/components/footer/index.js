@@ -4,12 +4,12 @@ export default function Footer() {
       <footer className="px-[50px] max-[1024px]:px-[20px] py-10 flex gap-6 flex-wrap">
         <div className="w-full flex justify-between items-start">
           <div>
-            <strong className="text-red-600">Our Address</strong>
+            <strong className="text-[#108896]">Our Address</strong>
             <br />
             <span className="whitespace-pre-line">{`Anywhere in Cape Town`}</span>
           </div>
           <div>
-            <strong className="text-red-600">Contact</strong>
+            <strong className="text-[#108896]">Contact</strong>
             <br />
             <a
               href="tel:+27637407158"
@@ -17,7 +17,7 @@ export default function Footer() {
             >{`(+27) 63-740-7158`}</a>
           </div>
           <div>
-            <strong className="text-red-600">Email</strong>
+            <strong className="text-[#108896]">Email</strong>
             <p className="whitespace-pre-line">
               {" "}
               <a
@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
         <hr className="w-full" />
         <div className="copyright w-full flex justify-center content-center">
-          <p>© 2025. All rights reserved</p>
+          <p>© 2025. All rights reserved, SimplyC development</p>
         </div>
       </footer>
     </>

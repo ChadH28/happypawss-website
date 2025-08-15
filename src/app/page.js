@@ -3,15 +3,18 @@ import InfoCard from "@/components/info-card";
 import { points, slides, activities } from "@/data/pageData";
 import AdventureSlider from "@/components/adventure-slider";
 import Choices from "@/components/choices";
+import ContactCard from "@/components/contact-card";
 
 export const metadata = {
-  title: "Train & Travel in Cape Town | Total Blessing Fitness Tours",
+  title:
+    "Trusted Pet Sitting Services in Cape Town | Loving Care for Your Pets",
   description:
-    "Discover fitness, wellness retreats & adventure in Cape Town. Total Blessing blends expert workouts with unforgettable guided travel experiences.",
+    "Professional pet sitting in Cape Town with personalized care for dogs, cats, and other pets. We ensure your furry friends are safe, happy, and well-loved while you’re away.",
   openGraph: {
-    title: "Train & Travel in Cape Town | Total Blessing Fitness Tours",
+    title:
+      "Trusted Pet Sitting Services in Cape Town | Loving Care for Your Pets",
     description:
-      "Discover fitness, wellness retreats & adventure in Cape Town. Total Blessing blends expert workouts with unforgettable guided travel experiences.",
+      "Professional pet sitting in Cape Town with personalized care for dogs, cats, and other pets. We ensure your furry friends are safe, happy, and well-loved while you’re away.",
     url: "https://totalblessingfitnessandtraveltours.co.za/",
     images: [
       {
@@ -43,7 +46,7 @@ export default function Home() {
       />
 
       <Choices
-      background={'#F5F3EE'}
+        background={"#F5F3EE"}
         heading={"Why Choose Me"}
         title={"For your best friend"}
         content={
@@ -63,6 +66,8 @@ export default function Home() {
         image={"/images/IMG-20250425-WA0024.jpg"}
         animate
       />
+
+      <ContactCard />
 
       {/* <InfoCard
         title={"Join our online boxercise classes!"}
