@@ -89,11 +89,10 @@ h2 {
 }
 
 .lined_header>h2 {
-  font-size: 4em;
+  /* font-size: 4em; */
   font-weight: 800;
   font-family: "Baloo Thambi 2", system-ui;
   margin-bottom: 20px;
-  margin-top: 0px;
   color: #108896;
   letter-spacing: -.025em;
   text-transform: uppercase;
@@ -101,15 +100,31 @@ h2 {
 
 .lined_header>h2:after,
 .lined_header>h2:before {
+  width: 97px;
   background-color: #000000;
   position: relative;
   content: '';
-  width: 97px;
+  width: 60px;
   opacity: 0.2;
   height: 2px;
   display: inline-block;
   vertical-align: middle;
   margin: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .lined_header>h2:after,
+  .lined_header>h2:before {
+    background-color: #000000;
+    position: relative;
+    content: '';
+    width: 60px;
+    opacity: 0.2;
+    height: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px;
+  }
 }
 
 

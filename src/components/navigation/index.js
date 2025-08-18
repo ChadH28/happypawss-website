@@ -19,7 +19,7 @@ export default function Navigation() {
 
   return (
     <nav className="fixed z-50 shadow-lg w-full bg-[#F19F1F] opacity-80 text-amber-50">
-      <div className="flex items-center justify-between px-[50px] py-[20px] md:flex-nowrap max-[1024px]:px-4 max-[1024px]:flex-wrap">
+      <div className="flex items-center justify-between px-[50px] py-2.5 md:py-[20px] md:flex-nowrap max-[1024px]:px-4 max-[1024px]:flex-wrap">
         {/* Logo */}
         <a href="/" className="logo-container">
           <img
@@ -88,12 +88,12 @@ export default function Navigation() {
             isMobileMenuOpen ? "180" : "0"
           }`}
         >
-          🥊
+          🐾
         </button>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-background w-full flex flex-col items-start py-6">
+          <div className="md:hidden w-full flex flex-col items-start py-6">
             <ul className="flex flex-col gap-4">
               {navdata.map((links, index) => (
                 <li key={index}>

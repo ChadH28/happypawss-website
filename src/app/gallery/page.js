@@ -32,13 +32,13 @@ export default function Gallery() {
         image={"/images/WhatsApp Image 2025-08-12 at 16.38.22 (2).jpeg"}
       />
       <div className="lined_header  text-center relative">
-        <h2>{"Gallery"}</h2>
+        <h2 className="text-lg lg:text-6xl">{"Gallery"}</h2>
       </div>
-      <div className="flex flex-wrap gap-4 justify-center">
+      <div className="flex px-5 w-full flex-wrap gap-4 justify-center">
         {galleryImages.map((item, index) => (
           <div
             key={index}
-            className="w-80 h-80 overflow-hidden relative rounded-2xl zoomImg"
+            className="w-full md:w-80 h-80 overflow-hidden relative rounded-2xl zoomImg"
           >
             <img
               className="object-cover w-[inherit] h-[inherit] absolute"
@@ -49,7 +49,7 @@ export default function Gallery() {
           </div>
         ))}
       </div>
-      
+
       <InfoCard
         alt
         title={"Love What You See? Let’s Care for Your Pet Too!"}

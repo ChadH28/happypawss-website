@@ -18,11 +18,11 @@ export default function Choices({
       style={{
         background: background,
       }}
-      className="py-10"
+      className="py-10 w-full max-[1024px]:p-5 p-16"
     >
       {heading && (
         <div className="lined_header text-[#108896] text-center relative">
-          <h2>{heading}</h2>
+          <h2 className="text-lg lg:text-6xl">{heading}</h2>
         </div>
       )}
       <div
@@ -30,7 +30,7 @@ export default function Choices({
       >
         <div
           className={`relative rounded-4xl
- image-container overflow-hidden h-auto w-1/2 max-[1024px]:w-screen`}
+ image-container overflow-hidden h-auto w-1/2 max-[1024px]:w-full max-[1024px]:h-80`}
         >
           <img
             className={`
@@ -49,7 +49,7 @@ export default function Choices({
           }}
           className={`${
             background ? `bg-[${background}]` : `bg-white`
-          }  content-container max-[1024px]:w-screen w-1/2 max-[1024px]:p-5 p-16 my-auto flex flex-col gap-5 justify-center`}
+          }  content-container max-[1024px]:mt-8 mt-0 max-[1024px]:w-full w-1/2 my-auto flex flex-col gap-5 justify-center`}
         >
           <h2
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
@@ -61,7 +61,7 @@ export default function Choices({
           </h2>
           <p
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
-            className={`max-[1024px]:text-xl ${
+            className={` ${
               textc ? `text-[${textc}]` : `text-[grey]`
             } text-pretty text-base`}
             style={{ whiteSpace: "preserve-breaks" }}
@@ -75,7 +75,7 @@ export default function Choices({
                   <h4 className="text-white rounded-4xl py-2.5 px-4 w-full text-lg my-1 capitalize cursor-pointer hover:bg-[#F19F1F] bg-[#108896]">
                     {activity.title}
                   </h4>
-                  <p className="text-[gray] p-2 w-[inherit]">
+                  <p className="text-[gray] max-[1024px]:text-xs text-base p-2 w-[inherit]">
                     {activity.description}
                   </p>
                 </span>

@@ -51,7 +51,7 @@ export default function AdventureSlider({ list, heading }) {
   return (
     <div className="adventure-section relative py-16 w-full flex flex-col gap-8">
       <div className="lined_header  text-center relative">
-        <h2>{heading}</h2>
+        <h2 className="text-lg lg:text-6xl">{heading}</h2>
       </div>
       <Slider {...settings} className="relative">
         {list.map((activity, index) => (

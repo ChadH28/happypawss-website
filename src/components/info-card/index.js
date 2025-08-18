@@ -21,7 +21,7 @@ export default function InfoCard({
       } max-[1024px]:flex-col h-fit mx-8 my-16`}
     >
       {video ? (
-        <div className={`w-1/2 max-[1024px]:w-screen ${!cover && "bg-black"} `}>
+        <div className={`w-1/2 max-[1024px]:w-full ${!cover && "bg-black"} `}>
           <video
             className={`object-${
               cover ? "cover" : "contain"
@@ -38,7 +38,7 @@ export default function InfoCard({
       ) : (
         <div
           className={`relative rounded-4xl
- image-container overflow-hidden min-h-[21.875rem] h-full w-1/2 max-[1024px]:w-screen`}
+ image-container overflow-hidden min-h-[21.875rem] h-full w-1/2 max-[1024px]:w-full`}
         >
           <img
             className={`
@@ -58,7 +58,7 @@ export default function InfoCard({
         }}
         className={`${
           background ? `bg-[${background}]` : `bg-white`
-        }  content-container max-[1024px]:w-screen w-1/2 max-[1024px]:p-5 p-16 flex flex-col gap-5 justify-center`}
+        }  content-container max-[1024px]:w-full w-1/2 max-[1024px]:p-5 p-16 flex flex-col gap-5 justify-center`}
       >
         <h2
           data-aos={animate && (alt ? "fade-right" : "fade-left")}
@@ -71,9 +71,9 @@ export default function InfoCard({
         {content && (
           <p
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
-            className={`max-[1024px]:text-xl ${
+            className={` ${
               textc ? `text-[${textc}]` : `text-[#532929]`
-            } text-pretty text-base`}
+            } text-pretty text-base w-full`}
             style={{ whiteSpace: "preserve-breaks" }}
           >
             {content}

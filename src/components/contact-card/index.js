@@ -1,16 +1,48 @@
+"use client";
+import { useState } from "react";
+
 export default function ContactCard() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  console.log(form);
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // const whatsappNumber = "27637407158"; // your WhatsApp number with country code (no + or spaces)
+    const whatsappNumber = "27844664783"; // your WhatsApp number with country code (no + or spaces)
+
+    const whatsappMessage = `Hello, my name is ${form.name}.
+Email: ${form.email}
+Phone: ${form.phone}
+Message: ${form.message}`;
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    window.open(url, "_blank"); // opens WhatsApp Web or mobile app
+  };
   return (
     <div className="parallax">
-      <div className="form-container flex flex-col h-[600px] justify-center items-center">
+      <div className="form-container flex flex-col h-[600px] p-4 justify-center items-center">
         <div className="lined_header  text-center relative">
-          <h2>{"Contact Us"}</h2>
+          <h2 className="text-lg lg:text-6xl">{"Contact Us"}</h2>
         </div>
         <form
+          onSubmit={handleSubmit}
           data-aos="zoom-in-right"
-          className="needs-validation bg-white flex flex-col gap-4 min-w-xl p-8 rounded-4xl"
-          id="form"
+          className="needs-validation bg-white flex flex-col gap-4 min-w-xl max-[1024px]:min-w-full p-8 rounded-4xl"
           noValidate
-          //   onSubmit={sendEmail}
         >
           <div className="flex flex-col gap-4">
             <div className="form-group">
@@ -22,12 +54,13 @@ export default function ContactCard() {
                 </div>
                 <input
                   type="text"
-                  name="name"
+                  id="name"
                   className="form-control"
-                  id="inputName name"
+                  value={form.name}
+                  onChange={handleChange}
                   aria-describedby="inputGroupPrepend"
                   placeholder="First Name"
-                  pattern="[A-Za-z]{1,25}"
+                  // pattern="[A-Za-z]{1,25}"
                   required
                 />
               </div>
@@ -42,11 +75,11 @@ export default function ContactCard() {
                 <input
                   type="email"
                   className="form-control"
-                  name="email"
-                  id="inputEmail email"
+                  id="email"
+                  value={form.email}
+                  onChange={handleChange}
                   placeholder="user@example.com"
-                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                  aria-describedby="inputGroupPrepend"
+                  // pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
                   required
                 />
               </div>
@@ -59,23 +92,26 @@ export default function ContactCard() {
                   </span>
                 </div>
                 <input
-                  type="tel"
+                  value={form.phone}
+                  onChange={handleChange}
+                  id="phone"
+                  type="text"
                   className="form-control"
-                  name="mobile"
-                  id="inputContact mobile"
-                  placeholder="123 456 7891"
-                  min="10"
-                  aria-describedby="inputGroupPrepend"
-                  pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                  placeholder="123 456 7891*"
+                  // min="10"
+                  // pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
                   required
                 />
               </div>
             </div>
             <div className="input-group border-[#F19F1F] border-[2px] rounded-lg px-2 py-1">
               <textarea
-                name="message"
-                placeholder="Your Message Here..."
+                id="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="Your Message Here*"
                 rows="3"
+                required
               />
             </div>
           </div>
@@ -84,7 +120,6 @@ export default function ContactCard() {
             data-callback="onSubmit"
             data-action="submit"
             type="submit"
-            id="button-send"
             className="btn g-recaptcha text-white send bg-[#F19F1F] py-3 px-4 rounded-xl cursor-pointer"
           >
             Send <i className="fas text-white fa-paper-plane" />
