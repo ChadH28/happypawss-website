@@ -24,13 +24,13 @@ export default function ContactCard() {
     const whatsappMessage = `Hello, my name is ${form.name}.
 Email: ${form.email}
 Phone: ${form.phone}
-Message: ${form.message}`;
+Message: ${form.message} - pet sitting enquiry`;
 
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
-
-    window.open(url, "_blank"); // opens WhatsApp Web or mobile app
+    window.location.href = url;
+    console.log(url);
   };
   return (
     <div className="parallax">
@@ -42,7 +42,7 @@ Message: ${form.message}`;
           onSubmit={handleSubmit}
           data-aos="zoom-in-right"
           className="needs-validation bg-white flex flex-col gap-4 min-w-xl max-[1024px]:min-w-full p-8 rounded-4xl"
-          noValidate
+          // noValidate
         >
           <div className="flex flex-col gap-4">
             <div className="form-group">
