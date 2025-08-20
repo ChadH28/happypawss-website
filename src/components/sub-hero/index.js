@@ -3,19 +3,19 @@
 
 export default function SubHero({ title, subtitle, image }) {
   return (
-    <header className="h-[60vh] w-screen relative">
-      <div className="relative flex max-[1024px]:flex-col overflow-hidden h-[inherit]">
-        <div className="uppercase hero-content flex flex-col justify-center items-center absolute h-full w-screen">
-          <h1 className="drop-shadow-xs z-10 text-white mx-14 max-[1024px]:mx-5  max-[1024px]:text-2xl text-5xl font-[800] text-center">
+    <header className="h-[70vh] w-screen relative">
+      <div className="relative flex flex-col overflow-hidden w-[inherit] h-[inherit]">
+        <div className="uppercase z-10 lg:px-44 px-5 text-white hero-content flex flex-col justify-center items-center absolute w-[inherit] h-[inherit] text-center">
+          <h1 className="drop-shadow-xs text-pretty text-2xl lg:text-5xl font-extrabold ">
             {title}
           </h1>
-          <p className="z-10 text-white mx-[50px] max-[1024px]:mx-5  max-[1024px]:text-l text-xl font-[400] text-center">
+          <p className="drop-shadow-xs text-base lg:text-xl font-normal">
             {subtitle}
           </p>
         </div>
-        <span className="overflow-hidden subhero relative w-screen h-[inherit]">
+        <span className="overflow-hidden subhero relative w-[inherit] h-[inherit]">
           <img
-            className="w-screen h-[inherit]
+            className="w-[inherit] h-[inherit]
             left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
             "
             src={image ?? "/hero-images/home.jpg"}

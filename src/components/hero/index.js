@@ -16,7 +16,7 @@ export default function Hero({ title, image, slider }) {
     <header className="h-[70vh] w-screen relative z-10">
       <div className="overflow-hidden w-[inherit] h-[inherit]">
         <div className="hero-content flex flex-col justify-center items-center absolute h-full w-screen">
-          <h1 className="z-10 text-white capitalize w-[70%] text-center lg:mx-auto mx-5 text-2xl lg:text-5xl">
+          <h1 className="z-10 drop-shadow-xs text-white capitalize w-[70%] text-center lg:mx-auto mx-5 text-2xl lg:text-5xl font-extrabold">
             {title}
           </h1>
         </div>
@@ -56,7 +56,6 @@ export default function Hero({ title, image, slider }) {
           )}
         </div>
       </div>
-
       <div className="absolute z-30 bottom-0 left-0 w-full h-auto">
         <svg
           id="curveUp"
