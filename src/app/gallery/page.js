@@ -14,7 +14,7 @@ export const metadata = {
     url: "https://totalblessingfitnessandtraveltours.co.za/",
     images: [
       {
-        url: "/images/logo3.png",
+        url: "/happypawss-website/images/logo3.png",
         width: 1200,
         height: 630,
         alt: "Total Blessing Fitness & Travel Tours",
@@ -29,7 +29,7 @@ export default function Gallery() {
       <SubHero
         title={"Happy Tails & Wagging Moments"}
         subtitle={"A glimpse into the joy I share with every pet I care for."}
-        image={"/images/WhatsApp Image 2025-08-12 at 16.38.22 (2).jpeg"}
+        image={"/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.22 (2).jpeg"}
       />
       <div className="lined_header  text-center relative">
         <h2 className="text-lg lg:text-6xl">{"Gallery"}</h2>
@@ -58,7 +58,7 @@ export default function Gallery() {
         buttonlabel={"Get in Touch"}
         external
         cover
-        video={"/videos/WhatsApp Video 2025-08-12 at 16.38.30.mp4"}
+        video={"/happypawss-website/videos/WhatsApp Video 2025-08-12 at 16.38.30.mp4"}
       />
     </main>
   );

@@ -1,7 +1,6 @@
 import Choices from "@/components/choices";
 import InfoCard from "@/components/info-card";
 import SubHero from "@/components/sub-hero";
-import VideoPlayer from "@/components/video-player";
 import { points } from "@/data/pageData";
 
 export const metadata = {
@@ -15,7 +14,7 @@ export const metadata = {
     url: "https://totalblessingfitnessandtraveltours.co.za/",
     images: [
       {
-        url: "/images/logo3.png",
+        url: "/happypawss-website/images/logo3.png",
         width: 1200,
         height: 630,
         alt: "Total Blessing Fitness & Travel Tours",
@@ -30,7 +29,7 @@ export default function AboutUs() {
       <SubHero
         title={"Where Love Meets Pet Care in Cape Town"}
         subtitle={"Caring for your pets as if they were my own."}
-        image={"/images/WhatsApp Image 2025-08-12 at 16.38.23.jpeg"}
+        image={"/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.23.jpeg"}
       />
 
       <Choices
@@ -42,17 +41,17 @@ export default function AboutUs() {
 What began as a few friendly favours quickly became something more. I realised that caring for pets wasn’t just a side task for me, it was a passion. Over time, I combined my love for animals with a dedication to reliability and professional care, building a service that pet parents can truly trust.`}
         points={points}
         image={
-          "/images/pexels-monique-laats-230726-736532-removebg-preview.png"
+          "/happypawss-website/images/pexels-monique-laats-230726-736532-removebg-preview.png"
         }
       />
 
       <InfoCard
         title={"See the Joy I Share with Pets"}
         content={`Curious about what a day with us looks like? Visit our gallery to meet our happy furry friends and see the love and care I give every pet.`}
-        buttonlink={"/gallery"}
+        buttonlink={"/happypawss-website/gallery"}
         buttonlabel={"Explore the Gallery"}
         cover
-        image={"/gallery-images/WhatsApp Image 2025-08-12 at 16.38.32.jpeg"}
+        image={"/happypawss-website/gallery-images/WhatsApp Image 2025-08-12 at 16.38.32.jpeg"}
       />
 
       <InfoCard
@@ -63,7 +62,7 @@ What began as a few friendly favours quickly became something more. I realised t
         buttonlabel={"Get in Touch"}
         external
         cover
-        video={"/videos/WhatsApp Video 2025-08-12 at 16.38.30.mp4"}
+        video={"/happypawss-website/videos/WhatsApp Video 2025-08-12 at 16.38.30.mp4"}
       />
     </main>
   );

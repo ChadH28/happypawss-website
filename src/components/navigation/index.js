@@ -26,7 +26,7 @@ export default function Navigation() {
             width={80}
             height={80}
             alt="Happypaws Logo"
-            src="/logos/logo_nobg.png"
+            src="/happypawss-website/logos/logo_nobg.png"
           />
         </a>
 
