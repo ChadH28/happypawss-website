@@ -18,24 +18,22 @@ export default function Choices({
       style={{
         background: background,
       }}
-      className="py-10 w-full max-[1024px]:p-5 p-16"
+      className="px-5 lg:px-28 py-10 lg:py-16 flex flex-col gap-4"
     >
       {heading && (
         <div className="lined_header text-[#108896] text-center relative">
-          <h2 className="text-lg lg:text-6xl">{heading}</h2>
+          <h2 className="text-base md:text-6xl">{heading}</h2>
         </div>
       )}
-      <div
-        className={`flex flex-row-reverse max-[1024px]:flex-col h-auto mx-8 my-16`}
-      >
+      <div className={`flex lg:flex-row-reverse gap-8 flex-col h-auto`}>
         <div
           className={`relative rounded-4xl
- image-container overflow-hidden h-auto w-1/2 max-[1024px]:w-full max-[1024px]:h-80`}
+ image-container overflow-hidden h-80 w-full lg:w-1/2 md:h-96`}
         >
           <img
             className={`
             left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
-            h-[inherit] w-full`}
+            h-[inherit] w-[inherit]`}
             src={image ?? "/card-images/football.jpg"}
             alt="descriptive card"
             sizes="(max-width: 1024px) 75vw, 100vw"
@@ -44,12 +42,11 @@ export default function Choices({
 
         <div
           style={{
-            // background: background,
             color: textc,
           }}
           className={`${
             background ? `bg-[${background}]` : `bg-white`
-          }  content-container max-[1024px]:mt-8 mt-0 max-[1024px]:w-full w-1/2 my-auto flex flex-col gap-5 justify-center`}
+          }  content-container w-full lg:w-1/2 my-auto flex flex-col gap-3 justify-center`}
         >
           <h2
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
@@ -63,19 +60,19 @@ export default function Choices({
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
             className={` ${
               textc ? `text-[${textc}]` : `text-[grey]`
-            } text-pretty text-base`}
+            } text-pretty text-xs lg:text-base`}
             style={{ whiteSpace: "preserve-breaks" }}
           >
             {content}
           </p>
-          <div className="h-72">
+          <div>
             {points &&
               points.map((activity, index) => (
-                <span key={index} className="points my-2">
-                  <h4 className="text-white rounded-4xl py-2.5 px-4 w-full text-lg my-1 capitalize cursor-pointer hover:bg-[#F19F1F] bg-[#108896]">
+                <span key={index} className="points">
+                  <h4 className="text-white rounded-4xl py-2.5 px-4 w-full text-xs lg:text-lg my-2 capitalize cursor-pointer hover:bg-[#F19F1F] bg-[#108896]">
                     {activity.title}
                   </h4>
-                  <p className="text-[gray] max-[1024px]:text-xs text-base p-2 w-[inherit]">
+                  <p className="text-[gray] text-xs lg:text-base px-6">
                     {activity.description}
                   </p>
                 </span>
@@ -87,7 +84,7 @@ export default function Choices({
         {list &&
           list.map((activity, index) => (
             <span key={index} className="h-auto px-6">
-              <div className="h-80 relative">
+              <div className="max-h-[99999px] h-auto relative">
                 <img
                   style={{
                     objectFit: "cover",

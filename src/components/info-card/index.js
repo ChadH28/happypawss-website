@@ -17,16 +17,16 @@ export default function InfoCard({
   return (
     <div
       className={`flex ${
-        alt ? "flex-row-reverse" : "flex-row"
-      } max-[1024px]:flex-col h-fit mx-8 my-16`}
+        alt ? "lg:flex-row-reverse" : "lg:flex-row"
+      } flex-col justify-between px-5 lg:px-28 py-10 lg:py-16 lg:gap-11 gap-4`}
     >
       {video ? (
         <div className={`w-1/2 max-[1024px]:w-full ${!cover && "bg-black"} `}>
           <video
             className={`object-${
               cover ? "cover" : "contain"
-            } h-[21.875rem] rounded-4xl
- h-inherit max-[1024px]:h-96 w-screen`}
+            } md:min-h-[21.875rem] min-h-80 lg:min-h-[25rem] rounded-4xl
+ h-inherit h-96 w-screen`}
             autoPlay
             loop
             muted
@@ -38,11 +38,11 @@ export default function InfoCard({
       ) : (
         <div
           className={`relative rounded-4xl
- image-container overflow-hidden min-h-[21.875rem] h-full w-1/2 max-[1024px]:w-full`}
+ image-container overflow-hidden lg:min-h-[25rem] md:min-h-[21.875rem] min-h-80 h-full w-1/2 max-[1024px]:w-full`}
         >
           <img
             className={`
-            left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute scale-[1.3]
+            left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
             object-cover h-[inherit] w-full ${greyscale && "grayscale"}`}
             src={image ?? "/card-images/football.jpg"}
             alt="FN Rangers descriptive card"
@@ -58,13 +58,13 @@ export default function InfoCard({
         }}
         className={`${
           background ? `bg-[${background}]` : `bg-white`
-        }  content-container max-[1024px]:w-full w-1/2 max-[1024px]:p-5 p-16 flex flex-col gap-5 justify-center`}
+        }  content-container w-full lg:w-1/2 flex flex-col gap-3 justify-center`}
       >
         <h2
           data-aos={animate && (alt ? "fade-right" : "fade-left")}
           className={`whitespace-pre-line ${
-            textc ? `text-[${textc}]` : null
-          }  uppercase font-extrabold max-[1024px]:text-2xl text-4xl`}
+            textc ? `text-[${textc}]` : "text-black"
+          }  uppercase font-extrabold text-2xl lg:text-4xl`}
         >
           {title}
         </h2>
@@ -72,8 +72,8 @@ export default function InfoCard({
           <p
             data-aos={animate && (alt ? "fade-right" : "fade-left")}
             className={` ${
-              textc ? `text-[${textc}]` : `text-[#532929]`
-            } text-pretty text-base w-full`}
+              textc ? `text-[${textc}]` : `text-gray`
+            } text-pretty text-xs lg:text-base`}
             style={{ whiteSpace: "preserve-breaks" }}
           >
             {content}

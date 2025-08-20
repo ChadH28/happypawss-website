@@ -57,13 +57,13 @@ export default function AdventureSlider({ list, heading }) {
         {list.map((activity, index) => (
           <a
             aria-label="booking enquiry"
-            href={`https://wa.me/27787589451?text=Booking%20enquiry%20for%20${activity.title}`}
+            href={`https://wa.me/27787589451?text=enquiry%20for%20${activity.title}`}
             target="_blank"
             rel="noopener noreferrer"
             key={index}
             className="h-auto px-6"
           >
-            <div className="h-80 relative">
+            <div className="h-60 rounded-2xl overflow-hidden md:h-80 relative">
               <img
                 style={{
                   objectFit: "cover",
@@ -80,7 +80,7 @@ export default function AdventureSlider({ list, heading }) {
           </a>
         ))}
       </Slider>
-      <span className="bg-[#F19F1F] font-extrabold rounded-4xl px-5 py-2 mx-auto w-fit text-center text-white uppercase text-sm">
+      <span className="bg-[#F19F1F] mx-5 font-extrabold rounded-4xl px-5 py-2 md:mx-auto w-fit text-center text-white uppercase text-sm">
         click on activity and Book via whatsapp
       </span>
     </div>

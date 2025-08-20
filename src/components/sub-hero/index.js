@@ -18,10 +18,10 @@ export default function SubHero({ title, subtitle, image }) {
             className="w-screen h-[inherit]
             left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
             "
-            priority="true"
             src={image ?? "/hero-images/home.jpg"}
             alt="hero image"
             fill="true"
+            priority="true"
             style={{ objectFit: "cover" }}
           />
         </span>

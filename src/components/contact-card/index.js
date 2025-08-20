@@ -36,7 +36,7 @@ Message: ${form.message} - pet sitting enquiry`;
     <div className="parallax">
       <div className="form-container flex flex-col h-[600px] p-4 justify-center items-center">
         <div className="lined_header  text-center relative">
-          <h2 className="text-lg lg:text-6xl">{"Contact Us"}</h2>
+          <h2 className="text-base md:text-6xl">{"Contact Us"}</h2>
         </div>
         <form
           onSubmit={handleSubmit}
