@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./public/**/*.html"            // optional
+    "./public/**/*.html", // optional
   ],
   theme: {
     extend: {
