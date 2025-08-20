@@ -21,7 +21,7 @@ export default function Navigation() {
     <nav className="fixed z-50 shadow-lg w-full bg-[#F19F1F] opacity-80 text-amber-50">
       <div className="flex items-center justify-between px-[50px] py-2.5 md:py-[20px] md:flex-nowrap max-[1024px]:px-4 max-[1024px]:flex-wrap">
         {/* Logo */}
-        <a href="/" className="logo-container">
+        <a href="/happypawss-website/" className="logo-container">
           <img
             width={80}
             height={80}
