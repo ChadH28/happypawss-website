@@ -40,7 +40,7 @@ export default function Home() {
       <InfoCard
         title={"Discover My Passion for Petsitting"}
         alt
-        buttonlink={"/about"}
+        buttonlink={"/happypawss-website/about"}
         buttonlabel={"Get to know my journey"}
         image={"/images/IMG-20250425-WA0009.jpg"}
       />
@@ -61,7 +61,7 @@ export default function Home() {
       <InfoCard
         title={"Paw-some Moments Caught on Camera"}
         content={`From playful zoomies to peaceful naps, the gallery captures the heartwarming adventures of the pets I care for. Each photo tells a story of wagging tails, happy purrs, and unforgettable memories. Take a peek, you might just spot your furry friend’s best moment!"`}
-        buttonlink={"/gallery"}
+        buttonlink={"/happypawss-website/gallery"}
         buttonlabel={"view gallery"}
         image={"/images/IMG-20250425-WA0024.jpg"}
         animate

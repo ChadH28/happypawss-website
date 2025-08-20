@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy": "next build",
+    "export": "next build && next export",
+    "predeploy": "rm -rf .next out && next build",
     "deploy": "gh-pages -d out",
     "dev": "next dev --turbopack",
     "build": "next build",
