@@ -18,7 +18,7 @@ export default function SubHero({ title, subtitle, image }) {
             className="w-[inherit] h-[inherit]
             left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
             "
-            src={image ?? "/hero-images/home.jpg"}
+            src={image ?? "/hero-images/home.webp"}
             alt="hero image"
             fill="true"
             priority="true"

@@ -36,7 +36,7 @@ export default function Hero({ title, image, slider }) {
                         ? "scale-100 opacity-100"
                         : "scale-110 opacity-0"
                     }`}
-                  src={slide ?? "/hero-images/home.jpg"}
+                  src={slide ?? "/hero-images/home.webp"}
                   alt="hero image"
                   fill="true"
                   priority="true"
@@ -47,7 +47,7 @@ export default function Hero({ title, image, slider }) {
           ) : (
             <img
               className={`absolute w-full h-full`}
-              src={image ?? "/hero-images/home.jpg"}
+              src={image ?? "/hero-images/home.webp"}
               alt="hero image"
               fill="true"
               priority="true"

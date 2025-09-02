@@ -42,7 +42,7 @@ export default function Home() {
         alt
         buttonlink={"/happypawss-website/about"}
         buttonlabel={"Get to know my journey"}
-        image={"/happypawss-website/images/IMG-20250425-WA0009.jpg"}
+        image={"/happypawss-website/images/IMG-20250425-WA0009.webp"}
       />
 
       <Choices
@@ -63,7 +63,7 @@ export default function Home() {
         content={`From playful zoomies to peaceful naps, the gallery captures the heartwarming adventures of the pets I care for. Each photo tells a story of wagging tails, happy purrs, and unforgettable memories. Take a peek, you might just spot your furry friend’s best moment!"`}
         buttonlink={"/happypawss-website/gallery"}
         buttonlabel={"view gallery"}
-        image={"/happypawss-website/images/IMG-20250425-WA0024.jpg"}
+        image={"/happypawss-website/images/IMG-20250425-WA0024.webp"}
         animate
       />
 

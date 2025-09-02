@@ -44,7 +44,7 @@ export default function InfoCard({
             className={`
             left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
             object-cover h-[inherit] w-full ${greyscale && "grayscale"}`}
-            src={image ?? "/card-images/football.jpg"}
+            src={image ?? "/card-images/football.webp"}
             alt="FN Rangers descriptive card"
             sizes="(max-width: 1024px) 75vw, 100vw"
           />

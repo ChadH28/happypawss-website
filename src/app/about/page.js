@@ -29,7 +29,7 @@ export default function AboutUs() {
       <SubHero
         title={"Where Love Meets Pet Care in Cape Town"}
         subtitle={"Caring for your pets as if they were my own."}
-        image={"/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.23.jpeg"}
+        image={"/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.23.webp"}
       />
 
       <Choices
@@ -51,7 +51,7 @@ What began as a few friendly favours quickly became something more. I realised t
         buttonlink={"/happypawss-website/gallery"}
         buttonlabel={"Explore the Gallery"}
         cover
-        image={"/happypawss-website/gallery-images/WhatsApp Image 2025-08-12 at 16.38.32.jpeg"}
+        image={"/happypawss-website/gallery-images/WhatsApp Image 2025-08-12 at 16.38.32.webp"}
       />
 
       <InfoCard

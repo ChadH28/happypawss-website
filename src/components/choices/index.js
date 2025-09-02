@@ -34,7 +34,7 @@ export default function Choices({
             className={`
             left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 absolute
             h-[inherit] w-[inherit]`}
-            src={image ?? "/card-images/football.jpg"}
+            src={image ?? "/card-images/football.webp"}
             alt="descriptive card"
             sizes="(max-width: 1024px) 75vw, 100vw"
           />

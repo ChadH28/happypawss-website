@@ -30,7 +30,7 @@ export default function Gallery() {
         title={"Happy Tails & Wagging Moments"}
         subtitle={"A glimpse into the joy I share with every pet I care for."}
         image={
-          "/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.22 (2).jpeg"
+          "/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.22 (2).webp"
         }
       />
       <div className="py-10 px-5 lg:px-10 lg:py-16 flex flex-col gap-4">
