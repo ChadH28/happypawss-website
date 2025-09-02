@@ -50,7 +50,7 @@ export default function Navigation() {
           </ul>
 
           {/* Social Media Links */}
-          <div className="hidden md:flex gap-4">
+          {/* <div className="hidden md:flex gap-4">
             <a href="https://wa.link/2fyjg5" target="_blank">
               <i
                 className="fa-brands hover:text-black  text-tertiary fa-whatsapp"
@@ -78,7 +78,7 @@ export default function Navigation() {
                 aria-hidden="true"
               />
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* Mobile Menu Toggle Button */}
@@ -113,7 +113,7 @@ export default function Navigation() {
             </ul>
 
             {/* Mobile Social Media Links */}
-            <div className="flex gap-4 mt-4">
+            {/* <div className="flex gap-4 mt-4">
               <a href="https://wa.link/2fyjg5" target="_blank">
                 <i
                   className="fa-brands text-tertiary fa-whatsapp"
@@ -144,7 +144,7 @@ export default function Navigation() {
                   aria-hidden="true"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
