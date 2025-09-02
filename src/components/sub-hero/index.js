@@ -20,8 +20,7 @@ export default function SubHero({ title, subtitle, image }) {
             "
             src={image ?? "/hero-images/home.webp"}
             alt="hero image"
-            fill="true"
-            priority="true"
+            fetchPriority="high"
             style={{ objectFit: "cover" }}
           />
         </span>

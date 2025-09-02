@@ -91,7 +91,7 @@ export default function Choices({
                     width: "100%",
                     height: "inherit",
                   }}
-                  fill="true"
+                  fetchPriority="low"
                   src={activity.image}
                   alt={`activity - ${activity.title}`}
                 />

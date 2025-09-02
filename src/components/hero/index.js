@@ -38,8 +38,8 @@ export default function Hero({ title, image, slider }) {
                     }`}
                   src={slide ?? "/hero-images/home.webp"}
                   alt="hero image"
-                  fill="true"
-                  priority="true"
+                  fetchPriority="high"
+                  sizes="(max-width: 1024px) 75vw, 100vw"
                   style={{ objectFit: "cover" }}
                 />
               </div>
@@ -49,8 +49,8 @@ export default function Hero({ title, image, slider }) {
               className={`absolute w-full h-full`}
               src={image ?? "/hero-images/home.webp"}
               alt="hero image"
-              fill="true"
-              priority="true"
+              fetchPriority="high"
+              sizes="(max-width: 1024px) 75vw, 100vw"
               style={{ objectFit: "cover" }}
             />
           )}

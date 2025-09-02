@@ -47,6 +47,7 @@ export default function InfoCard({
             src={image ?? "/card-images/football.webp"}
             alt="FN Rangers descriptive card"
             sizes="(max-width: 1024px) 75vw, 100vw"
+            fetchPriority="low"
           />
         </div>
       )}

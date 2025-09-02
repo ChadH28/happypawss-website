@@ -70,7 +70,8 @@ export default function AdventureSlider({ list, heading }) {
                   width: "100%",
                   height: "inherit",
                 }}
-                fill="true"
+                fetchPriority="auto"
+                sizes="(max-width: 1024px) 75vw, 100vw"
                 src={activity.image}
                 alt={`activity - ${activity.title}`}
               />

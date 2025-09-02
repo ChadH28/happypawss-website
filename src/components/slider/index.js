@@ -53,14 +53,14 @@ export default function ClientSlider({ list, images }) {
       {list.map((activity, index) => (
         <React.Fragment key={index}>
           {images ? (
-            <div  className="h-auto px-6">
+            <div className="h-auto px-6">
               <div className="h-[21.875rem] w-full relative">
                 <img
                   className="h-[inherit] w-[inherit]"
                   style={{ objectFit: " cover" }}
-                  fill='true'
+                  fetchPriority="low"
                   src={activity.image}
-                  alt={"activity."}
+                  alt={activity?.text}
                 />
               </div>
             </div>

@@ -25,6 +25,7 @@ export default function Navigation() {
           <img
             width={80}
             height={80}
+            fetchPriority="high"
             alt="Happypaws Logo"
             src="/happypawss-website/logos/logo_nobg.png"
           />
