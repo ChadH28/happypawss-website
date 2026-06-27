@@ -9,7 +9,7 @@ export default function ContactCard() {
     message: "",
   });
 
-  console.log(form);
+  const [sent, setSent] = useState(false);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.id]: e.target.value });
@@ -18,8 +18,7 @@ export default function ContactCard() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // const whatsappNumber = "27637407158"; // your WhatsApp number with country code (no + or spaces)
-    const whatsappNumber = "27844664783"; // your WhatsApp number with country code (no + or spaces)
+    const whatsappNumber = "27844664783";
 
     const whatsappMessage = `Hello, my name is ${form.name}.
 Email: ${form.email}
@@ -29,103 +28,81 @@ Message: ${form.message} - pet sitting enquiry`;
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
-    window.location.href = url;
-    console.log(url);
+    window.open(url, "_blank");
+    setSent(true);
   };
+
   return (
-    <div className="parallax">
-      <div className="form-container flex flex-col h-[600px] p-4 justify-center items-center">
-        <div className="lined_header  text-center relative">
-          <h2 className="text-base md:text-6xl">{"Contact Us"}</h2>
+    <section className="parallax">
+      <div className="flex flex-col min-h-[600px] py-12 px-4 justify-center items-center">
+        <div className="text-center mb-6">
+          <h2 className="section-heading text-2xl md:text-5xl">Contact Us</h2>
+          <p className="text-[#3D2C2E]/70 text-sm md:text-base mt-2 max-w-md">
+            Ready to book? Send us a message and we&apos;ll get back to you with a wagging tail!
+          </p>
         </div>
         <form
           onSubmit={handleSubmit}
-          data-aos="zoom-in-right"
-          className="needs-validation bg-white flex flex-col gap-4 min-w-xl max-[1024px]:min-w-full p-8 rounded-4xl"
-          // noValidate
+          className="flex flex-col gap-4 w-full max-w-lg bg-[#FDF8F0]/90 backdrop-blur-md p-6 md:p-8 rounded-3xl shadow-lg border border-[#F19F1F]/10"
         >
-          <div className="flex flex-col gap-4">
-            <div className="form-group">
-              <div className="input-group flex items-center gap-2 border-[#F19F1F] border-[2px] rounded-lg px-2 py-1">
-                <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroupPrepend">
-                    <i className="text-[#F19F1F] fas fa-user" />
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  id="name"
-                  className="form-control"
-                  value={form.name}
-                  onChange={handleChange}
-                  aria-describedby="inputGroupPrepend"
-                  placeholder="First Name"
-                  // pattern="[A-Za-z]{1,25}"
-                  required
-                />
-              </div>
+          <div className="flex flex-col gap-3">
+            <div className="input-group flex items-center rounded-xl px-3 py-2">
+              <input
+                type="text"
+                id="name"
+                className="w-full bg-transparent outline-none text-sm font-semibold text-[#3D2C2E] placeholder:text-[#F19F1F]/60"
+                value={form.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                required
+              />
             </div>
-            <div className="form-group">
-              <div className="input-group flex items-center gap-2 border-[#F19F1F] border-[2px] rounded-lg px-2 py-1">
-                <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroupPrepend">
-                    <i className="text-[#F19F1F] far fa-envelope" />
-                  </span>
-                </div>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="user@example.com"
-                  // pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
-                  required
-                />
-              </div>
+            <div className="input-group flex items-center rounded-xl px-3 py-2">
+              <input
+                type="email"
+                id="email"
+                className="w-full bg-transparent outline-none text-sm font-semibold text-[#3D2C2E] placeholder:text-[#F19F1F]/60"
+                value={form.email}
+                onChange={handleChange}
+                placeholder="your@email.com"
+                required
+              />
             </div>
-            <div className="form-group">
-              <div className="input-group flex items-center gap-2 border-[#F19F1F] border-[2px] rounded-lg px-2 py-1">
-                <div className="input-group-prepend">
-                  <span className="input-group-text" id="inputGroupPrepend">
-                    <i className="text-[#F19F1F] fas fa-phone" />
-                  </span>
-                </div>
-                <input
-                  value={form.phone}
-                  onChange={handleChange}
-                  id="phone"
-                  type="text"
-                  className="form-control"
-                  placeholder="123 456 7891*"
-                  // min="10"
-                  // pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-                  required
-                />
-              </div>
+            <div className="input-group flex items-center rounded-xl px-3 py-2">
+              <input
+                type="tel"
+                id="phone"
+                className="w-full bg-transparent outline-none text-sm font-semibold text-[#3D2C2E] placeholder:text-[#F19F1F]/60"
+                value={form.phone}
+                onChange={handleChange}
+                placeholder="Phone number"
+                required
+              />
             </div>
-            <div className="input-group border-[#F19F1F] border-[2px] rounded-lg px-2 py-1">
+            <div className="input-group flex items-start rounded-xl px-3 py-2">
               <textarea
                 id="message"
+                className="w-full bg-transparent outline-none text-sm font-semibold text-[#3D2C2E] placeholder:text-[#F19F1F]/60"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="Your Message Here*"
+                placeholder="Tell us about your pet!"
                 rows="3"
                 required
               />
             </div>
           </div>
           <button
-            data-sitekey="reCAPTCHA_site_key"
-            data-callback="onSubmit"
-            data-action="submit"
             type="submit"
-            className="btn g-recaptcha text-white send bg-[#F19F1F] py-3 px-4 rounded-xl cursor-pointer"
+            className="w-full bg-[#F19F1F] text-white py-3 rounded-xl font-bold text-sm hover:bg-[#e08e12] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 flex items-center justify-center"
           >
-            Send <i className="fas text-white fa-paper-plane" />
+            <span>{sent ? "Message Sent!" : "Send Message"}</span>
           </button>
+          <p className="text-[#3D2C2E]/50 text-xs text-center">
+            We&apos;ll reply via WhatsApp within a few hours
+          </p>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
+

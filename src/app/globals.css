@@ -1,33 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #000000;
+  --background: #FDF8F0;
+  --foreground: #3D2C2E;
+  --primary: #3D2C2E;
   --secondary: #F19F1F;
-  --tertiary: #EA1E23ff;
-  --primaryred: #EA1E23ff;
-  --primary-grey: #B9B9B8ff;
-  --blacktransgradient: linear-gradient(to top,
-      #000000,
-      transparent);
+  --accent: #108896;
+  --accent-light: #E8F5F2;
+  --warm-cream: #FDF8F0;
+  --warm-tan: #F5F0E8;
+  --pet-orange: #F19F1F;
+  --pet-teal: #108896;
+  --soft-shadow: 0 8px 32px rgba(57, 46, 39, 0.08);
+  --warm-gradient: linear-gradient(145deg, rgba(241, 159, 31, 0.12), rgba(16, 136, 150, 0.06));
 }
 
-*:focus {
-  outline: none;
-  border: none;
+*:focus-visible {
+  outline: 2px solid var(--pet-orange);
+  outline-offset: 2px;
+  border-radius: 8px;
 }
 
 .input-group {
-  background-color: rgba(241, 159, 31, 0.3);
+  background-color: rgba(241, 159, 31, 0.15);
+  border: 2px solid rgba(241, 159, 31, 0.25) !important;
+  transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+  border-color: var(--pet-orange) !important;
+  box-shadow: 0 0 0 4px rgba(241, 159, 31, 0.1);
 }
 
 *[placeholder] {
   font-size: small;
-  background-color: rgba(164, 198, 57, 0);
+  background-color: transparent;
   border: none;
-  font-weight: bold;
-  color: #F19F1F;
+  font-weight: 600;
+  color: var(--pet-orange);
 }
 
 *[placeholder]:focus {
@@ -39,7 +49,6 @@ textarea {
   resize: none;
 }
 
-
 main {
   overflow: hidden;
 }
@@ -47,15 +56,8 @@ main {
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: "Baloo Thambi 2", system-ui;
+  --font-mono: "Inter", monospace;
 }
 
 body {
@@ -64,14 +66,15 @@ body {
   font-family: "Baloo Thambi 2", system-ui;
 }
 
+/* ── Hero / Subhero Overlays ── */
 .hero-image::after,
 .subhero::after {
   left: 0;
   position: absolute;
   content: "";
-  background: var(--blacktransgradient);
+  background: linear-gradient(to top, rgba(61, 44, 46, 0.55) 0%, transparent 60%);
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 h1,
@@ -80,76 +83,45 @@ h2 {
   font-family: "Baloo Thambi 2", system-ui;
 }
 
-.form-container {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.form-container form {
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.lined_header>h2 {
-  /* font-size: 4em; */
+/* ── Section Heading ── */
+.section-heading {
   font-weight: 800;
   font-family: "Baloo Thambi 2", system-ui;
   margin-bottom: 20px;
-  color: #108896;
-  letter-spacing: -.025em;
+  color: var(--pet-teal);
+  letter-spacing: -0.025em;
   text-transform: uppercase;
-}
-
-.lined_header>h2:after,
-.lined_header>h2:before {
-  width: 97px;
-  background-color: #000000;
   position: relative;
-  content: '';
-  width: 60px;
-  opacity: 0.2;
-  height: 2px;
   display: inline-block;
-  vertical-align: middle;
-  margin: 20px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .lined_header>h2:after,
-  .lined_header>h2:before {
-    background-color: #000000;
-    position: relative;
-    content: '';
-    width: 60px;
-    opacity: 0.2;
-    height: 2px;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px;
-  }
-}
-
-
+/* ── Points (accordion style) ── */
 .points {
   overflow: hidden;
-  height: 800px;
-  transition: max-height 0.4s ease;
-  background-color: #108896;
+  max-height: 52px;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--pet-teal);
+  border-radius: 16px;
+  margin-bottom: 8px;
 }
 
-/* .points:hover {
-  background-color: #108896;
-} */
+.points:hover {
+  max-height: 400px;
+}
 
 .points>p {
-  display: none;
-  max-height: 0px;
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease 0.15s, max-height 0.4s ease 0.1s;
+  overflow: hidden;
 }
 
 .points:hover>p {
-  display: block;
   max-height: 500px;
-  /* bigger than content */
+  opacity: 1;
 }
 
+/* ── Parallax Contact Section ── */
 .parallax {
   background-image: url("/happypawss-website/images/pexels-lum3n-44775-406014.webp");
   min-height: 600px;
@@ -157,32 +129,99 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
+.parallax::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(253, 248, 240, 0.7) 0%, rgba(253, 248, 240, 0.4) 100%);
+  z-index: 1;
+}
+
+.parallax > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Image Zoom on Hover ── */
 .zoomImg {
   overflow: hidden;
-  transition: 0.75s ease-in-out;
+  border-radius: 24px !important;
+  transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .zoomImg>img {
-  transition: 0.75s ease-in-out;
+  transition: 0.75s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .zoomImg:hover>img {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
+/* ── Hover Lift Effect ── */
 .hoverstate {
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  display: block;
+  display: inline-block;
   z-index: 1;
-  transition: 0.25s ease-in-out;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hoverstate:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(241, 159, 31, 0.25);
+}
+
+/* ── Image Card Frame ── */
+.card-frame {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--soft-shadow);
+  background: var(--warm-cream);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.card-frame:hover {
+  box-shadow: 0 16px 48px rgba(57, 46, 39, 0.12);
+  transform: translateY(-4px);
+}
+
+/* ── Warm Divider ── */
+.warm-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--pet-orange), var(--pet-teal), transparent);
+  opacity: 0.2;
+  border: none;
+}
+
+/* ── Subtle paw background ── */
+.paw-bg {
+  position: relative;
+}
+
+.paw-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 C33 5 35 7 35 10 C35 13 33 15 30 15 C27 15 25 13 25 10 C25 7 27 5 30 5Z' fill='%23F19F1F' opacity='0.04'/%3E%3Cpath d='M15 20 C18 20 20 22 20 25 C20 28 18 30 15 30 C12 30 10 28 10 25 C10 22 12 20 15 20Z' fill='%23108896' opacity='0.04'/%3E%3Cpath d='M45 20 C48 20 50 22 50 25 C50 28 48 30 45 30 C42 30 40 28 40 25 C40 22 42 20 45 20Z' fill='%23F19F1F' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.form-container {
+  background-color: rgba(253, 248, 240, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+.form-container form {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(241, 159, 31, 0.15);
 }
 
 /* .hoverstate::before {
