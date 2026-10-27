@@ -71,7 +71,7 @@ export default function AdventureSlider({ list, heading }) {
           {list.map((activity, index) => (
             <a
               aria-label={`Book ${activity.title}`}
-              href={`https://wa.me/27787589451?text=enquiry%20for%20${activity.title}`}
+              href={`https://wa.me/27637407158?text=enquiry%20for%20${activity.title}`}
               target="_blank"
               rel="noopener noreferrer"
               key={index}
@@ -100,7 +100,7 @@ export default function AdventureSlider({ list, heading }) {
         </Slider>
         <div className="text-center mt-8">
           <a
-            href="https://wa.me/27844664783?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
+            href="https://wa.me/27637407158?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#F19F1F] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[#e08e12] transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"

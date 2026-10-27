@@ -24,7 +24,7 @@ export default function Hero({ title, image, slider }) {
               Cape Town&apos;s trusted pet sitting — where every tail gets a happy ending.
             </p>
             <a
-              href="https://wa.me/27844664783?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
+              href="https://wa.me/27637407158?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 mt-6 bg-[#F19F1F] text-white px-6 py-3 rounded-full text-sm font-bold hover:bg-[#e08e12] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"

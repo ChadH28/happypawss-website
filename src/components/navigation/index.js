@@ -63,7 +63,7 @@ export default function Navigation() {
 
           {/* WhatsApp CTA */}
           <a
-            href="https://wa.me/27844664783?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
+            href="https://wa.me/27637407158?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#108896] text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-[#0d727a] transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"
@@ -102,7 +102,7 @@ export default function Navigation() {
             ))}
             <hr className="warm-divider my-2" />
             <a
-              href="https://wa.me/27844664783?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
+              href="https://wa.me/27637407158?text=Hey%20Happy%20Paws!%20I'd%20like%20to%20book%20your%20pet%20sitting%20services%20%E2%9C%A8"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#108896] text-white text-center px-4 py-3 rounded-full text-sm font-bold hover:bg-[#0d727a] transition-all duration-300"

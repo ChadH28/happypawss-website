@@ -18,7 +18,7 @@ export default function ContactCard() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappNumber = "27844664783";
+    const whatsappNumber = "27637407158";
 
     const whatsappMessage = `Hello, my name is ${form.name}.
 Email: ${form.email}
