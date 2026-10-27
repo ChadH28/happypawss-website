@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import Navigation from "@/components/navigation";
 import "@/app/globals.css";
 import Footer from "@/components/footer";
