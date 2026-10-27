@@ -4,20 +4,27 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./public/**/*.html", // optional
+    "./public/**/*.html",
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        tertiary: "var(--tertiary)",
         secondary: "var(--secondary)",
         primary: "var(--primary)",
-        primarycolorgradient: "var(--primarycolorgradient)",
-        blacktransgradient: "var(--blacktransgradient)",
-        primaryred: "var(--primaryred)",
-        primaryblue: "var(--primaryblue)",
+        accent: "var(--accent)",
+        "accent-light": "var(--accent-light)",
+        "warm-cream": "var(--warm-cream)",
+        "warm-tan": "var(--warm-tan)",
+        "pet-orange": "var(--pet-orange)",
+        "pet-teal": "var(--pet-teal)",
+      },
+      borderRadius: {
+        "4xl": "2rem",
+      },
+      boxShadow: {
+        soft: "var(--soft-shadow)",
       },
     },
   },

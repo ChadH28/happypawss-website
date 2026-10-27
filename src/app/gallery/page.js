@@ -33,21 +33,21 @@ export default function Gallery() {
           "/happypawss-website/images/WhatsApp Image 2025-08-12 at 16.38.22 (2).webp"
         }
       />
-      <div className="py-10 px-5 lg:px-10 lg:py-16 flex flex-col gap-4">
-        <div className="lined_header  text-center relative">
-          <h2 className="text-base md:text-6xl">{"Gallery"}</h2>
+      <div className="py-10 px-5 lg:px-10 lg:py-16 max-w-7xl mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="section-heading text-2xl md:text-6xl">Gallery</h2>
         </div>
         <div className="flex w-full flex-wrap gap-4 justify-center">
           {galleryImages.map((item, index) => (
             <div
               key={index}
-              className="w-full h-52 lg:h-96 lg:w-96 md:w-80 md:h-80 overflow-hidden relative rounded-2xl zoomImg"
+              className="w-full h-52 lg:h-80 lg:w-80 md:w-72 md:h-72 overflow-hidden relative rounded-3xl zoomImg card-frame"
             >
               <img
                 className="object-cover w-[inherit] h-[inherit] absolute"
                 src={item.image}
-                alt={`Masonry image ${index + 1}`}
-                fill="true"
+                alt={`Happy pet moment ${index + 1}`}
+                loading="lazy"
               />
             </div>
           ))}
